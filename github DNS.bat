@@ -1,5 +1,5 @@
 echo "MainDns2Google"
-netsh interface ip set dns "·ÎÄÃ ¿µ¿ª ¿¬°á" static 8.8.8.8
+netsh interface ip set dns "ë¡œì»¬ ì˜ì—­ ì—°ê²°" static 8.8.8.8
 echo "Done"
 echo "SetGoogleIPAddress"
 (
