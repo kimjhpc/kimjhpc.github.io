@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기호 3번 이남규·이현욱·양승현 - 새로운 바람! 변화의 물결!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-color: #1e3a8a; color: #1e3a8a; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white text-center py-12 px-4 shadow-lg">
+        <span class="bg-yellow-400 text-blue-900 font-extrabold px-4 py-1.5 rounded-full text-sm tracking-wide">제17대 서울시설공단 노동조합위원장 선거</span>
+        <h1 class="text-4xl font-black mt-4 tracking-tight">기호 <span class="text-yellow-400 text-5xl">3</span>번</h1>
+        <p class="text-2xl font-bold mt-2 text-blue-100">새로운 바람! 변화의 물결!</p>
+        <p class="text-lg mt-1 font-medium text-slate-300">침묵하지 않는 노조, 조합원을 위한 노조</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto my-8 px-4">
+        <div class="bg-white rounded-2xl shadow-sm p-6 border border-slate-100 flex flex-col md:flex-row justify-around items-center gap-6 text-center">
+            <div>
+                <p class="text-xs text-slate-400 font-bold tracking-wider">위원장 후보</p>
+                <p class="text-xl font-black text-slate-800 mt-1">이남규</p>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-slate-200"></div>
+            <div>
+                <p class="text-xs text-slate-400 font-bold tracking-wider">수석 부위원장 후보</p>
+                <p class="text-xl font-black text-slate-800 mt-1">이현욱</p>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-slate-200"></div>
+            <div>
+                <p class="text-xs text-slate-400 font-bold tracking-wider">사무처장 후보</p>
+                <p class="text-xl font-black text-slate-800 mt-1">양승현</p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="max-w-4xl mx-auto px-4 sticky top-0 bg-slate-50/90 backdrop-blur-md z-50">
+        <div class="flex border-b border-slate-200 text-center text-sm md:text-base bg-white rounded-t-xl shadow-sm overflow-hidden">
+            <button onclick="switchTab('tab-core')" id="btn-tab-core" class="tab-btn active flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">12대 핵심공약</button>
+            <button onclick="switchTab('tab-branch')" id="btn-tab-branch" class="tab-btn flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">지부별 공약</button>
+            <button onclick="switchTab('tab-혁신')" id="btn-tab-혁신" class="tab-btn flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">소통·보상·혁신</button>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-4 min-h-[60vh]">
+        
+        <div id="tab-core" class="tab-content active space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">01</span>
+                    <h3 class="text-lg font-bold text-slate-900">임금저하 없는 4.5일제 쟁취</h3>
+                    <p class="text-slate-600 text-sm mt-1">중장기 로드맵(격주 금요일 오후 퇴근 실시 후 확대 적용)으로 임금 및 복리후생 축소 없는 근무시간 단축 추진</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">02</span>
+                    <h3 class="text-lg font-bold text-slate-900">진급 및 근속승진 확대</h3>
+                    <p class="text-slate-600 text-sm mt-1">4급까지 근속승진 제도 확대 추진 및 직종 간 승진 격차 해소를 위한 제도 개선</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">03</span>
+                    <h3 class="text-lg font-bold text-slate-900">공짜근무 단절 및 인력 충원</h3>
+                    <p class="text-slate-600 text-sm mt-1">휴직·육아시간 사용으로 인한 업무 공백 해소 및 결원 발생 시 신속한 대체인력 확보 체계 마련</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">04</span>
+                    <h3 class="text-lg font-bold text-slate-900">정년 연장</h3>
+                    <p class="text-slate-600 text-sm mt-1">60세에서 65세까지 연장 추진 (연장 전까지는 재고용 형식으로 근무 보장)</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">05</span>
+                    <h3 class="text-lg font-bold text-slate-900">임금피크제 폐지</h3>
+                    <p class="text-slate-600 text-sm mt-1">정년 보장과 임금 보장을 함께 고려한 합리적 임금체계 마련</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                    <span class="text-blue-600 font-bold text-sm block mb-1">06</span>
+                    <h3 class="text-lg font-bold text-slate-900">사내대출 제도 개선</h3>
+                    <p class="text-slate-600 text-sm mt-1">사내복지기금 출연 100억 원, 사내대출 5,000만 원으로 확대 추진</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-branch" class="tab-content space-y-4">
+            <p class="text-xs text-slate-400 font-medium px-1">※ 해당 지부를 선택하시면 맞춤 공약을 바로 확인하실 수 있습니다.</p>
+            
+            <div class="space-y-3">
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                    <div class="bg-slate-900 text-white px-4 py-3 font-bold text-sm">공동구지부</div>
+                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li>공사감독 및 시설물관리수당 개선 (공사감독처)</li>
+                        <li>공동구관리처 인력 충원 (공동구관리처)</li>
+                        <li>공동구 업무 전산화 (출입서명부 전산화, 점검 결과 온라인 시스템 도입)</li>
+                        <li>실정에 맞는 부서 개편 실시</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                    <div class="bg-blue-800 text-white px-4 py-3 font-bold text-sm">도로지부</div>
+                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li>노후 차량 교체 예산 확보</li>
+                        <li>법정 안전관리자 선임수당 지급 (10만원)</li>
+                        <li>사무실 및 휴게공간 확보</li>
+                        <li>운전직 상위 직급 TO 확보 / 직원 근거리 현장 배치</li>
+                        <li>토목직 시설물 관리수당 지급 확대 (도로관리처)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                    <div class="bg-cyan-800 text-white px-4 py-3 font-bold text-sm">상수도지부</div>
+                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li>5급 정원 확보 및 6급 자동 승진 추진</li>
+                        <li>내부발령 최소화</li>
+                        <li>임금피크제 대상자 개선</li>
+                        <li>현장출퇴근제 강화</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-혁신" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
+                <h3 class="text-md font-black text-slate-900 border-l-4 border-blue-600 pl-2 mb-4">소통으로 변화하는 공단</h3>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li><strong class="text-slate-900">다음 전보 시 동일 본부 배체 배제:</strong> 공정하고 균형 있는 순환보직 체계 마련</li>
+                    <li><strong class="text-slate-900">조합원 소통 강화:</strong> 세대별, 직종별 노조원 간담회 정례화</li>
+                    <li><strong class="text-slate-900">서무 업무 반토막내기:</strong> 피복, 교육수료증 등 취합자료 개별 입력 시스템 구축</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
+                <h3 class="text-md font-black text-slate-900 border-l-4 border-emerald-600 pl-2 mb-4">노동의 가치에 걸맞는 보상</h3>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li><strong class="text-slate-900">기술수당 인상:</strong> 유사 공공기관 수준 기준 기술수당 인상 추진 및 기술직 가치 인정</li>
+                    <li><strong class="text-slate-900">일·당직비 인상:</strong> 현재 80,000원 → <span class="text-emerald-600 font-bold">100,000원</span>으로 인상</li>
+                    <li><strong class="text-slate-900">특근식대 개선:</strong> 현재 9,000원 → <span class="text-emerald-600 font-bold">12,000원</span>으로 개선</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center py-8 text-xs mt-12 border-t border-slate-700">
+        <p>© 2026 기호 3번 선거대책본부. 본 페이지는 정적 페이지로 개인정보를 수집하지 않습니다.</p>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // 모든 콘텐트 숨기기
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            // 모든 버튼 활성화 해제
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            // 선택한 탭 열기
+            document.getElementById(tabId).classList.add('active');
+            document.getElementById('btn-' + tabId).classList.add('active');
+            
+            // 탭 전환 시 화면 상단으로 부드럽게 스크롤
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
