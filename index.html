@@ -3,161 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기호 3번 이남규·이현욱·양승현 - 새로운 바람! 변화의 물결!</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .tab-btn.active { border-color: #1e3a8a; color: #1e3a8a; font-weight: bold; }
-    </style>
+    <title>기호 3번 이남규·이현욱·양승현 | 제17대 서울시설공단 노동조합위원장 선거</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body>
 
-    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white text-center py-12 px-4 shadow-lg">
-        <span class="bg-yellow-400 text-blue-900 font-extrabold px-4 py-1.5 rounded-full text-sm tracking-wide">제17대 서울시설공단 노동조합위원장 선거</span>
-        <h1 class="text-4xl font-black mt-4 tracking-tight">기호 <span class="text-yellow-400 text-5xl">3</span>번</h1>
-        <p class="text-2xl font-bold mt-2 text-blue-100">새로운 바람! 변화의 물결!</p>
-        <p class="text-lg mt-1 font-medium text-slate-300">침묵하지 않는 노조, 조합원을 위한 노조</p>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">3</div>
+                <div class="logo-text">
+                    <div class="logo-title">기호 3번 선거대책본부</div>
+                    <div class="logo-subtitle">Seoul Facilities Corp Union</div>
+                </div>
+            </a>
+            <button class="burger-menu" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">홈</a>
+                <a href="candidates.html" class="nav-link">후보자 소개</a>
+                <a href="pledges.html" class="nav-link">12대 핵심공약</a>
+                <a href="innovation.html" class="nav-link">부문별 혁신공약</a>
+                <a href="branches.html" class="nav-link">지부별 공약</a>
+                <a href="leaflet.html" class="nav-link">선거 리플렛</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="max-w-4xl mx-auto my-8 px-4">
-        <div class="bg-white rounded-2xl shadow-sm p-6 border border-slate-100 flex flex-col md:flex-row justify-around items-center gap-6 text-center">
-            <div>
-                <p class="text-xs text-slate-400 font-bold tracking-wider">위원장 후보</p>
-                <p class="text-xl font-black text-slate-800 mt-1">이남규</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container animate-fade-in">
+            <span class="hero-badge">제17대 서울시설공단 노동조합위원장 선거</span>
+            <div class="hero-number-wrap">
+                <span class="hero-symbol">기호 3</span>
             </div>
-            <div class="hidden md:block w-px h-10 bg-slate-200"></div>
-            <div>
-                <p class="text-xs text-slate-400 font-bold tracking-wider">수석 부위원장 후보</p>
-                <p class="text-xl font-black text-slate-800 mt-1">이현욱</p>
+            <h1 class="hero-title">새로운 <span class="highlight-wind">바람</span>! 변화의 <span class="highlight-wave">물결</span>!</h1>
+            <p class="hero-subtitle">
+                "<span class="highlight-silence">침묵</span>하지 <span class="highlight-not">않는</span> 목소리, 변화의 시작!<br>
+                듣기만 하는 노조가 아닌 움직이는 노조, 조합원의 목소리에 응답하고 함께 행동하겠습니다."
+            </p>
+            
+            <div class="hero-ctas">
+                <a href="pledges.html" class="btn btn-accent">12대 공약 보러가기</a>
+                <a href="leaflet.html" class="btn btn-outline">선거 리플렛 원본보기</a>
             </div>
-            <div class="hidden md:block w-px h-10 bg-slate-200"></div>
-            <div>
-                <p class="text-xs text-slate-400 font-bold tracking-wider">사무처장 후보</p>
-                <p class="text-xl font-black text-slate-800 mt-1">양승현</p>
+
+            <!-- Candidate Profile Grid -->
+            <div class="candidate-badge-group">
+                <p class="candidate-badge-title">후보 조 선거대책단</p>
+                <div class="candidate-names">
+                    <div class="candidate-name-item">
+                        <span class="pos">위원장 후보</span>
+                        <span class="name">이남규</span>
+                    </div>
+                    <div class="candidate-name-item">
+                        <span class="pos">수석 부위원장 후보</span>
+                        <span class="name">이현욱</span>
+                    </div>
+                    <div class="candidate-name-item">
+                        <span class="pos">사무처장 후보</span>
+                        <span class="name">양승현</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <nav class="max-w-4xl mx-auto px-4 sticky top-0 bg-slate-50/90 backdrop-blur-md z-50">
-        <div class="flex border-b border-slate-200 text-center text-sm md:text-base bg-white rounded-t-xl shadow-sm overflow-hidden">
-            <button onclick="switchTab('tab-core')" id="btn-tab-core" class="tab-btn active flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">12대 핵심공약</button>
-            <button onclick="switchTab('tab-branch')" id="btn-tab-branch" class="tab-btn flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">지부별 공약</button>
-            <button onclick="switchTab('tab-혁신')" id="btn-tab-혁신" class="tab-btn flex-1 py-4 border-b-2 border-transparent hover:text-blue-700 transition-all">소통·보상·혁신</button>
-        </div>
-    </nav>
+    <!-- Manifesto / Core Values -->
+    <section class="section-padding bg-white-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">OUR MANIFESTO</span>
+                <h2 class="section-title"><span class="highlight-silence">침묵</span>하지 <span class="highlight-not">않는</span> 노조, 행동하는 양심</h2>
+                <p class="section-desc">조합원의 목소리를 외면하지 않겠습니다. 불합리함에는 침묵하지 않고, 필요한 변화에는 가장 먼저 행동하겠습니다.</p>
+            </div>
 
-    <main class="max-w-4xl mx-auto p-4 min-h-[60vh]">
-        
-        <div id="tab-core" class="tab-content active space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">01</span>
-                    <h3 class="text-lg font-bold text-slate-900">임금저하 없는 4.5일제 쟁취</h3>
-                    <p class="text-slate-600 text-sm mt-1">중장기 로드맵(격주 금요일 오후 퇴근 실시 후 확대 적용)으로 임금 및 복리후생 축소 없는 근무시간 단축 추진</p>
+            <div class="candidate-cards-grid">
+                <!-- Candidate Card 1 -->
+                <div class="candidate-card">
+                    <div class="candidate-card-header img-bg-namgyu">
+                        <p class="candidate-card-role">위원장 후보</p>
+                        <h3 class="candidate-card-name">이남규<span>현 을지로 전기안전관리자</span></h3>
+                    </div>
+                    <div class="candidate-card-body">
+                        <p class="candidate-quote">"현장은 강하게, 조합원은 든든하게!"</p>
+                        <p class="candidate-mini-bio">
+                            전 15대 노동조합 위원장으로서, 조합비 22% 인하, 전자투표 도입, 경쟁 4년 연속 가등급 기여 등 검증된 성과를 보여드렸습니다. 한 번의 경험을 바탕으로 조합원이 체감할 수 있는 최상의 결과물을 증명하겠습니다.
+                        </p>
+                        <a href="candidates.html#namgyu" class="candidate-link-btn">출마 메시지 & 약력 보기</a>
+                    </div>
                 </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">02</span>
-                    <h3 class="text-lg font-bold text-slate-900">진급 및 근속승진 확대</h3>
-                    <p class="text-slate-600 text-sm mt-1">4급까지 근속승진 제도 확대 추진 및 직종 간 승진 격차 해소를 위한 제도 개선</p>
+
+                <!-- Candidate Card 2 -->
+                <div class="candidate-card">
+                    <div class="candidate-card-header img-bg-hyunwook">
+                        <p class="candidate-card-role">수석 부위원장 후보</p>
+                        <h3 class="candidate-card-name">이현욱<span>젊은 소통과 실천의 중심</span></h3>
+                    </div>
+                    <div class="candidate-card-body">
+                        <p class="candidate-quote">"젊은 목소리로 소통하고, 조합원이 체감하는 변화를!"</p>
+                        <p class="candidate-mini-bio">
+                            공단은 현재 변화의 중요한 갈림길에 서 있습니다. 현장의 현실을 외면하지 않고 익숙함에 머무르지 않는 젊고 강렬한 실천으로 노조의 새로운 바람을 만들어내겠습니다.
+                        </p>
+                        <a href="candidates.html#hyunwook" class="candidate-link-btn">출마 메시지 & 약력 보기</a>
+                    </div>
                 </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">03</span>
-                    <h3 class="text-lg font-bold text-slate-900">공짜근무 단절 및 인력 충원</h3>
-                    <p class="text-slate-600 text-sm mt-1">휴직·육아시간 사용으로 인한 업무 공백 해소 및 결원 발생 시 신속한 대체인력 확보 체계 마련</p>
-                </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">04</span>
-                    <h3 class="text-lg font-bold text-slate-900">정년 연장</h3>
-                    <p class="text-slate-600 text-sm mt-1">60세에서 65세까지 연장 추진 (연장 전까지는 재고용 형식으로 근무 보장)</p>
-                </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">05</span>
-                    <h3 class="text-lg font-bold text-slate-900">임금피크제 폐지</h3>
-                    <p class="text-slate-600 text-sm mt-1">정년 보장과 임금 보장을 함께 고려한 합리적 임금체계 마련</p>
-                </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
-                    <span class="text-blue-600 font-bold text-sm block mb-1">06</span>
-                    <h3 class="text-lg font-bold text-slate-900">사내대출 제도 개선</h3>
-                    <p class="text-slate-600 text-sm mt-1">사내복지기금 출연 100억 원, 사내대출 5,000만 원으로 확대 추진</p>
+
+                <!-- Candidate Card 3 -->
+                <div class="candidate-card">
+                    <div class="candidate-card-header img-bg-seunghyun">
+                        <p class="candidate-card-role">사무처장 후보</p>
+                        <h3 class="candidate-card-name">양승현<span>소통과 즐거운 일터 구축</span></h3>
+                    </div>
+                    <div class="candidate-card-body">
+                        <p class="candidate-quote">"거창한 말보다 실제 체감할 수 있는 즐거운 일터를!"</p>
+                        <p class="candidate-mini-bio">
+                            2020년 입사 후 현장에서 쌓은 소중한 경험을 바탕으로, 젊은 세대와 선배 동료들의 생각이 격의 없이 흐르는 노조를 지향합니다. 사소한 목소리도 놓치지 않고 조합문화의 혁신을 이끌어 가겠습니다.
+                        </p>
+                        <a href="candidates.html#seunghyun" class="candidate-link-btn">출마 메시지 & 약력 보기</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="tab-branch" class="tab-content space-y-4">
-            <p class="text-xs text-slate-400 font-medium px-1">※ 해당 지부를 선택하시면 맞춤 공약을 바로 확인하실 수 있습니다.</p>
             
-            <div class="space-y-3">
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-                    <div class="bg-slate-900 text-white px-4 py-3 font-bold text-sm">공동구지부</div>
-                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
-                        <li>공사감독 및 시설물관리수당 개선 (공사감독처)</li>
-                        <li>공동구관리처 인력 충원 (공동구관리처)</li>
-                        <li>공동구 업무 전산화 (출입서명부 전산화, 점검 결과 온라인 시스템 도입)</li>
-                        <li>실정에 맞는 부서 개편 실시</li>
-                    </ul>
-                </div>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-                    <div class="bg-blue-800 text-white px-4 py-3 font-bold text-sm">도로지부</div>
-                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
-                        <li>노후 차량 교체 예산 확보</li>
-                        <li>법정 안전관리자 선임수당 지급 (10만원)</li>
-                        <li>사무실 및 휴게공간 확보</li>
-                        <li>운전직 상위 직급 TO 확보 / 직원 근거리 현장 배치</li>
-                        <li>토목직 시설물 관리수당 지급 확대 (도로관리처)</li>
-                    </ul>
-                </div>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-                    <div class="bg-cyan-800 text-white px-4 py-3 font-bold text-sm">상수도지부</div>
-                    <ul class="p-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
-                        <li>5급 정원 확보 및 6급 자동 승진 추진</li>
-                        <li>내부발령 최소화</li>
-                        <li>임금피크제 대상자 개선</li>
-                        <li>현장출퇴근제 강화</li>
-                    </ul>
-                </div>
+            <div class="text-center">
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">젊고 열린 소통, 투명한 운영, 그리고 실천하는 노동조합. 조합원이 자랑스러워하는 노조를 만들겠습니다.</p>
             </div>
         </div>
+    </section>
 
-        <div id="tab-혁신" class="tab-content space-y-6">
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
-                <h3 class="text-md font-black text-slate-900 border-l-4 border-blue-600 pl-2 mb-4">소통으로 변화하는 공단</h3>
-                <ul class="space-y-3 text-sm text-slate-600">
-                    <li><strong class="text-slate-900">다음 전보 시 동일 본부 배체 배제:</strong> 공정하고 균형 있는 순환보직 체계 마련</li>
-                    <li><strong class="text-slate-900">조합원 소통 강화:</strong> 세대별, 직종별 노조원 간담회 정례화</li>
-                    <li><strong class="text-slate-900">서무 업무 반토막내기:</strong> 피복, 교육수료증 등 취합자료 개별 입력 시스템 구축</li>
-                </ul>
+    <!-- Key Pledges Summary -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">KEY PLEDGES</span>
+                <h2 class="section-title">조합원의 행복한 삶을 위한 주요 약속</h2>
+                <p class="section-desc">변화를 말이 아닌, 결과로 보여드리겠습니다. 조합원의 내일을 바꿀 확실한 선택입니다.</p>
             </div>
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
-                <h3 class="text-md font-black text-slate-900 border-l-4 border-emerald-600 pl-2 mb-4">노동의 가치에 걸맞는 보상</h3>
-                <ul class="space-y-3 text-sm text-slate-600">
-                    <li><strong class="text-slate-900">기술수당 인상:</strong> 유사 공공기관 수준 기준 기술수당 인상 추진 및 기술직 가치 인정</li>
-                    <li><strong class="text-slate-900">일·당직비 인상:</strong> 현재 80,000원 → <span class="text-emerald-600 font-bold">100,000원</span>으로 인상</li>
-                    <li><strong class="text-slate-900">특근식대 개선:</strong> 현재 9,000원 → <span class="text-emerald-600 font-bold">12,000원</span>으로 개선</li>
-                </ul>
+
+            <div class="pledge-preview-grid">
+                <div class="pledge-preview-card">
+                    <div class="pledge-num">01</div>
+                    <div>
+                        <h3 class="pledge-preview-title">임금저하 없는 4.5일제 쟁취</h3>
+                        <p class="pledge-preview-desc">격주 금요일 오후 퇴근 실시를 시작으로 중장기 로드맵을 구축하여, 임금 및 복리후생 축소 없는 근로시간 단축을 단계적으로 추진합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="pledge-preview-card">
+                    <div class="pledge-num">02</div>
+                    <div>
+                        <h3 class="pledge-preview-title">진급 및 근속승진 대폭 확대</h3>
+                        <p class="pledge-preview-desc">4급까지 근속승진 제도를 전격 확대하고, 진급 인원을 연차별로 대폭 상향(1년차 600명, 2년차 650명, 3년차 700명)하여 직종 간 승진 격차를 근본적으로 해소합니다.</p>
+                    </div>
+                </div>
+
+                <div class="pledge-preview-card">
+                    <div class="pledge-num">04</div>
+                    <div>
+                        <h3 class="pledge-preview-title">정년 연장 65세 확보</h3>
+                        <p class="pledge-preview-desc">정년을 기존 60세에서 65세까지 연장하는 법안 개정을 강력 추진하며, 연장 전까지는 합리적인 재고용 형식의 연속 근무 형태를 보장합니다.</p>
+                    </div>
+                </div>
+
+                <div class="pledge-preview-card">
+                    <div class="pledge-num">06</div>
+                    <div>
+                        <h3 class="pledge-preview-title">사내대출 제도 획기적 개선</h3>
+                        <p class="pledge-preview-desc">사내복지기금 출연액을 100억 원으로 증대하고, 사내대출 한도를 5,000만 원으로 전격 확대하며, 퇴직금 연동 보증보험 발급 방식을 선진화합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="pledges.html" class="btn btn-primary">12대 핵심 공약 전체보기</a>
             </div>
         </div>
+    </section>
 
-    </main>
+    <!-- Branch Pledges CTA banner -->
+    <section class="container mb-8">
+        <div class="cta-banner">
+            <h2 class="cta-title">각 현장에서 겪는 불편함, 맞춤형 공약으로 해결합니다</h2>
+            <p class="cta-desc">12대 지부별(공동구, 공공자전거, 도로, 상수도, 본사 등) 맞춤 공약을 확인해보세요.</p>
+            <a href="branches.html" class="btn btn-accent">나의 지부별 공약 확인하기</a>
+        </div>
+    </section>
 
-    <footer class="bg-slate-800 text-slate-400 text-center py-8 text-xs mt-12 border-t border-slate-700">
-        <p>© 2026 기호 3번 선거대책본부. 본 페이지는 정적 페이지로 개인정보를 수집하지 않습니다.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="footer-logo-badge">3</div>
+                        <div class="footer-logo-text">기호 3번 이남규·이현욱·양승현</div>
+                    </div>
+                    <p class="footer-desc">제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부입니다. 침묵하지 않는 목소리, 변화의 시작! 젊은 생각으로, 강한 실행으로 더 나은 내일을 만들어가겠습니다.</p>
+                </div>
+                <div class="footer-links-wrap">
+                    <div class="footer-links-col">
+                        <h6>바로가기</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">홈으로</a></li>
+                            <li><a href="candidates.html">후보자 소개</a></li>
+                            <li><a href="pledges.html">12대 핵심공약</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h6>세부 공약</h6>
+                        <ul class="footer-links">
+                            <li><a href="innovation.html">혁신·소통·보상·신뢰</a></li>
+                            <li><a href="branches.html">지부별 공약 보기</a></li>
+                            <li><a href="leaflet.html">리플렛 원본</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부. All Rights Reserved. 본 사이트는 정적 페이지로 조합원의 어떠한 정보도 수집하거나 저장하지 않습니다.</p>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        function switchTab(tabId) {
-            // 모든 콘텐트 숨기기
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            // 모든 버튼 활성화 해제
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            
-            // 선택한 탭 열기
-            document.getElementById(tabId).classList.add('active');
-            document.getElementById('btn-' + tabId).classList.add('active');
-            
-            // 탭 전환 시 화면 상단으로 부드럽게 스크롤
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    <script src="common.js"></script>
 </body>
 </html>

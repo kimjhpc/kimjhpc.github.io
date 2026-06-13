@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선거 리플렛 원본보기 | 기호 3번 이남규·이현욱·양승현</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">3</div>
+                <div class="logo-text">
+                    <div class="logo-title">기호 3번 선거대책본부</div>
+                    <div class="logo-subtitle">Seoul Facilities Corp Union</div>
+                </div>
+            </a>
+            <button class="burger-menu" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">홈</a>
+                <a href="candidates.html" class="nav-link">후보자 소개</a>
+                <a href="pledges.html" class="nav-link">12대 핵심공약</a>
+                <a href="innovation.html" class="nav-link">부문별 혁신공약</a>
+                <a href="branches.html" class="nav-link">지부별 공약</a>
+                <a href="leaflet.html" class="nav-link">선거 리플렛</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sub Page Header -->
+    <section class="hero-section" style="padding: 80px 0 60px;">
+        <div class="container">
+            <span class="hero-badge">OFFICIAL BROCHURE</span>
+            <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 8px;">선거 리플렛 원본</h1>
+            <p class="hero-subtitle" style="font-size: 1.15rem; margin-bottom: 0;">
+                인쇄물로 제작된 기호 3번 공식 선거공보물 브로슈어를 디지털로 선명하게 확인하세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- Leaflet Viewer Section -->
+    <section class="section-padding bg-white-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 class="section-title" style="font-size: 1.8rem;">디지털 리플렛 슬라이더</h2>
+                <p class="section-desc">이미지를 클릭하시면 <strong>확대(원본 크기)</strong> 화면으로 크게 보실 수 있습니다.</p>
+            </div>
+
+            <div class="leaflet-container">
+                <!-- Viewer box -->
+                <div class="leaflet-viewer-box">
+                    <button class="leaflet-nav-btn leaflet-prev" id="slider-prev" aria-label="이전 페이지">&lt;</button>
+                    <button class="leaflet-nav-btn leaflet-next" id="slider-next" aria-label="다음 페이지">&gt;</button>
+                    
+                    <div class="leaflet-image-wrap" id="slider-image-container">
+                        <img src="KakaoTalk_20260612_112822260.jpg" alt="표지 및 뒷면 (1, 12페이지)" class="leaflet-img active" data-index="0">
+                        <img src="KakaoTalk_20260612_112822260_01.jpg" alt="12대 핵심 공약 (2, 3페이지)" class="leaflet-img" data-index="1">
+                        <img src="KakaoTalk_20260612_112822260_02.jpg" alt="후보자 소개 및 인사말 (4, 5페이지)" class="leaflet-img" data-index="2">
+                        <img src="KakaoTalk_20260612_112822260_03.jpg" alt="공단 혁신·소통·보상·신뢰 (6, 7페이지)" class="leaflet-img" data-index="3">
+                        <img src="KakaoTalk_20260612_112822260_04.jpg" alt="지부별 공약 1 (8, 9페이지)" class="leaflet-img" data-index="4">
+                        <img src="KakaoTalk_20260612_112822260_05.jpg" alt="지부별 공약 2 (10, 11페이지)" class="leaflet-img" data-index="5">
+                    </div>
+                </div>
+
+                <!-- Active Slide Caption -->
+                <div class="leaflet-info">
+                    <span id="slider-caption" style="font-weight: 700; color: var(--accent);">표지 및 뒷면 (1, 12페이지)</span>
+                    <span id="slider-counter" style="color: rgba(255, 255, 255, 0.6); margin-left: 10px;">(1 / 6)</span>
+                </div>
+
+                <!-- Slide Dots -->
+                <div class="leaflet-dots" id="slider-dots-container">
+                    <span class="leaflet-dot active" data-index="0"></span>
+                    <span class="leaflet-dot" data-index="1"></span>
+                    <span class="leaflet-dot" data-index="2"></span>
+                    <span class="leaflet-dot" data-index="3"></span>
+                    <span class="leaflet-dot" data-index="4"></span>
+                    <span class="leaflet-dot" data-index="5"></span>
+                </div>
+            </div>
+
+            <!-- Thumbnail Grid -->
+            <div class="leaflet-gallery-grid">
+                <div class="leaflet-thumb-card" data-index="0">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260.jpg" alt="썸네일 1" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">표지 및 뒷면 (1, 12페이지)</div>
+                </div>
+
+                <div class="leaflet-thumb-card" data-index="1">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260_01.jpg" alt="썸네일 2" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">12대 핵심 공약 (2, 3페이지)</div>
+                </div>
+
+                <div class="leaflet-thumb-card" data-index="2">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260_02.jpg" alt="썸네일 3" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">후보자 소개 (4, 5페이지)</div>
+                </div>
+
+                <div class="leaflet-thumb-card" data-index="3">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260_03.jpg" alt="썸네일 4" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">혁신·소통·보상·신뢰 (6, 7페이지)</div>
+                </div>
+
+                <div class="leaflet-thumb-card" data-index="4">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260_04.jpg" alt="썸네일 5" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">지부별 공약 1 (8, 9페이지)</div>
+                </div>
+
+                <div class="leaflet-thumb-card" data-index="5">
+                    <div class="leaflet-thumb-wrap">
+                        <img src="KakaoTalk_20260612_112822260_05.jpg" alt="썸네일 6" class="leaflet-thumb-img">
+                    </div>
+                    <div class="leaflet-thumb-desc text-center">지부별 공약 2 (10, 11페이지)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times; Close</button>
+            <img src="" alt="확대 이미지" class="lightbox-img" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="footer-logo-badge">3</div>
+                        <div class="footer-logo-text">기호 3번 이남규·이현욱·양승현</div>
+                    </div>
+                    <p class="footer-desc">제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부입니다. 침묵하지 않는 목소리, 변화의 시작! 젊은 생각으로, 강한 실행으로 더 나은 내일을 만들어가겠습니다.</p>
+                </div>
+                <div class="footer-links-wrap">
+                    <div class="footer-links-col">
+                        <h6>바로가기</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">홈으로</a></li>
+                            <li><a href="candidates.html">후보자 소개</a></li>
+                            <li><a href="pledges.html">12대 핵심공약</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h6>세부 공약</h6>
+                        <ul class="footer-links">
+                            <li><a href="innovation.html">혁신·소통·보상·신뢰</a></li>
+                            <li><a href="branches.html">지부별 공약 보기</a></li>
+                            <li><a href="leaflet.html">리플렛 원본</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부. All Rights Reserved. 본 사이트는 정적 페이지로 조합원의 어떠한 정보도 수집하거나 저장하지 않습니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.leaflet-img');
+            const dots = document.querySelectorAll('.leaflet-dot');
+            const thumbs = document.querySelectorAll('.leaflet-thumb-card');
+            const prevBtn = document.getElementById('slider-prev');
+            const nextBtn = document.getElementById('slider-next');
+            const caption = document.getElementById('slider-caption');
+            const counter = document.getElementById('slider-counter');
+            
+            // Lightbox elements
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const sliderImgContainer = document.getElementById('slider-image-container');
+
+            let currentIndex = 0;
+
+            const captions = [
+                "표지 및 뒷면 (1, 12페이지)",
+                "12대 핵심 공약 (2, 3페이지)",
+                "후보자 소개 및 인사말 (4, 5페이지)",
+                "공단 혁신·소통·보상·신뢰 (6, 7페이지)",
+                "지부별 공약 1 (8, 9페이지)",
+                "지부별 공약 2 (10, 11페이지)"
+            ];
+
+            function showSlide(index) {
+                if (index < 0) index = images.length - 1;
+                if (index >= images.length) index = 0;
+
+                currentIndex = index;
+
+                // Toggle active slide
+                images.forEach((img, i) => {
+                    img.classList.toggle('active', i === currentIndex);
+                });
+
+                // Toggle active dot
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentIndex);
+                });
+
+                // Update text
+                caption.textContent = captions[currentIndex];
+                counter.textContent = `(${currentIndex + 1} / ${images.length})`;
+            }
+
+            // Arrow actions
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent modal opening on arrow click
+                showSlide(currentIndex - 1);
+            });
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent modal opening on arrow click
+                showSlide(currentIndex + 1);
+            });
+
+            // Dots actions
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const index = parseInt(dot.getAttribute('data-index'));
+                    showSlide(index);
+                });
+            });
+
+            // Thumbnails actions
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    const index = parseInt(thumb.getAttribute('data-index'));
+                    showSlide(index);
+                    
+                    // Smooth scroll to slider container
+                    document.querySelector('.leaflet-container').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            });
+
+            // Lightbox Modal open on clicking the active slide
+            sliderImgContainer.addEventListener('click', () => {
+                const activeImg = images[currentIndex];
+                lightboxImg.src = activeImg.src;
+                lightboxImg.alt = activeImg.alt;
+                lightbox.classList.add('open');
+                document.body.style.overflow = 'hidden'; // Lock scrolling
+            });
+
+            // Lightbox Close
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target === lightboxClose) {
+                    closeLightbox();
+                }
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = ''; // Unlock scrolling
+            }
+
+            // Keyboard navigation (arrows and esc)
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.classList.contains('open')) {
+                    if (e.key === 'Escape') closeLightbox();
+                } else {
+                    if (e.key === 'ArrowLeft') showSlide(currentIndex - 1);
+                    if (e.key === 'ArrowRight') showSlide(currentIndex + 1);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

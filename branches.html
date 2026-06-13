@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지부별 공약 | 기호 3번 이남규·이현욱·양승현</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">3</div>
+                <div class="logo-text">
+                    <div class="logo-title">기호 3번 선거대책본부</div>
+                    <div class="logo-subtitle">Seoul Facilities Corp Union</div>
+                </div>
+            </a>
+            <button class="burger-menu" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">홈</a>
+                <a href="candidates.html" class="nav-link">후보자 소개</a>
+                <a href="pledges.html" class="nav-link">12대 핵심공약</a>
+                <a href="innovation.html" class="nav-link">부문별 혁신공약</a>
+                <a href="branches.html" class="nav-link">지부별 공약</a>
+                <a href="leaflet.html" class="nav-link">선거 리플렛</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sub Page Header -->
+    <section class="hero-section" style="padding: 80px 0 60px;">
+        <div class="container">
+            <span class="hero-badge">BRANCH SPECIFIC PLEDGES</span>
+            <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 8px;">지부별 공약</h1>
+            <p class="hero-subtitle" style="font-size: 1.15rem; margin-bottom: 0;">
+                일하는 노조! 일할 맛 나는 공단! 즐겁게 다닐 수 있는 공단을 반드시 만들겠습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Branches Content & Interactive Filter -->
+    <section class="section-padding bg-white-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 class="section-title" style="font-size: 1.8rem;">현장의 목소리를 세심하게 담았습니다</h2>
+                <p class="section-desc">지부명을 클릭하시거나 검색창에 검색하여 맞춤 공약을 확인해보세요.</p>
+            </div>
+
+            <!-- Search and Chips Filter -->
+            <div class="search-filter-container">
+                <div class="search-input-wrap">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="branch-search" class="search-input" placeholder="나의 지부 또는 공약 키워드를 입력하세요... (예: 도로, 수당, 승진)">
+                </div>
+
+                <div class="branch-chips-grid">
+                    <button class="branch-chip active" data-filter="all">전체보기</button>
+                    <button class="branch-chip" data-filter="공동구">공동구지부</button>
+                    <button class="branch-chip" data-filter="공공자전거">공공자전거지부</button>
+                    <button class="branch-chip" data-filter="교통">교통지부</button>
+                    <button class="branch-chip" data-filter="대공원">대공원지부</button>
+                    <button class="branch-chip" data-filter="도로">도로지부</button>
+                    <button class="branch-chip" data-filter="본사">본사지부</button>
+                    <button class="branch-chip" data-filter="상가">상가지부</button>
+                    <button class="branch-chip" data-filter="상수도">상수도지부</button>
+                    <button class="branch-chip" data-filter="시설">시설지부</button>
+                    <button class="branch-chip" data-filter="장애인콜택시">장애인콜택시지부</button>
+                    <button class="branch-chip" data-filter="추모">추모지부</button>
+                </div>
+            </div>
+
+            <!-- Branch Pledges Cards Grid -->
+            <div class="branch-pledge-list" id="branch-grid">
+                
+                <!-- 공동구지부 -->
+                <div class="branch-pledge-card" data-branch="공동구">
+                    <div class="branch-pledge-head">
+                        <span>공동구지부</span>
+                        <small>안전 및 관리 전산화</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>공사감독 및 시설물관리수당 개선 (공사감독처)</li>
+                            <li>공동구관리처 인력 충원 (공동구관리처)</li>
+                            <li>공동구 업무 전산화 (출입서명부 모바일 전산화, 점검 결과 온라인 시스템 도입)</li>
+                            <li>실정에 맞는 부서 개편 실시</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 공공자전거 지부 -->
+                <div class="branch-pledge-card" data-branch="공공자전거">
+                    <div class="branch-pledge-head" style="background-color: #0d9488;">
+                        <span>공공자전거 지부</span>
+                        <small>처우 개선 및 정원 확보</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>5급 정원 확보 및 6급 자동 승진 추진</li>
+                            <li>장거리 출퇴근 불편 해소를 위한 근거리 배치 및 내부발령 최소화</li>
+                            <li>기후동행카드 등 실질적 교통/출퇴근비 지원 신설</li>
+                            <li>설·추석 등 특정일 근무수당 인상 및 정비·대직 수당 개선</li>
+                            <li>적정 인력 기준 수립 및 인력충원 방법 개선</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 교통지부 -->
+                <div class="branch-pledge-card" data-branch="교통">
+                    <div class="branch-pledge-head" style="background-color: #4f46e5;">
+                        <span>교통지부</span>
+                        <small>근무환경 및 고용안정</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>노후화된 교통 초소 및 근무지 등 전반적 근무환경 개선</li>
+                            <li>실무직 현장 배치 시 거주지 고려 근거리 배치 정례화</li>
+                            <li>주차 통합센터 감정노동자를 위한 상담수당 지급 신설</li>
+                            <li>조·반장 직책수당 신설 및 기존 수당 인상</li>
+                            <li>조사직 혼잡수납원 고용안정 대책 강구 및 무기직 처우 개선</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 대공원지부 -->
+                <div class="branch-pledge-card" data-branch="대공원">
+                    <div class="branch-pledge-head" style="background-color: #0891b2;">
+                        <span>대공원지부</span>
+                        <small>사업 연동 보상 및 TO 확보</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>대공원 재조성 사업 추진에 따른 한시적 인력충원 및 격무 수당 지급</li>
+                            <li>현장 특수직 직렬의 상위 직급(TO) 확보 추진</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 도로지부 -->
+                <div class="branch-pledge-card" data-branch="도로">
+                    <div class="branch-pledge-head" style="background-color: #2563eb;">
+                        <span>도로지부</span>
+                        <small>안전장비 및 수당 현실화</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>안전사고 예방을 위한 노후 현장 차량 교체 예산 조기 확보</li>
+                            <li>법정 안전관리자 선임수당 지급 (월 10만 원)</li>
+                            <li>쾌적하고 위생적인 현장 사무실 및 휴게공간 확보</li>
+                            <li>운전직 상위 직급 TO 확보 및 직원 근거리 현장 배치</li>
+                            <li>토목직 시설물 관리수당 지급 범위 확대 (도로관리처)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 본사지부 -->
+                <div class="branch-pledge-card" data-branch="본사">
+                    <div class="branch-pledge-head" style="background-color: #10327c;">
+                        <span>본사지부</span>
+                        <small>근무 여건 및 청사 편의</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>교통 혼잡 완화 및 08시 출근자를 위한 통근/셔틀 버스 노선 도입</li>
+                            <li>쾌적한 실내 환경 유지를 위해 여름철 청사 적정온도 규정 2도 인하</li>
+                            <li>개인 맞춤형 일일 시차 출퇴근제 탄력적 도입</li>
+                            <li>청사 환경을 체계적으로 정비하기 위한 청사 관리 전담팀 신설</li>
+                            <li>본사 격무 부서원 특정업무수행비 인상</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 상가지부 -->
+                <div class="branch-pledge-card" data-branch="상가">
+                    <div class="branch-pledge-head" style="background-color: #7c3aed;">
+                        <span>상가지부</span>
+                        <small>교대 근무 개선 및 공간 확보</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>상가 위험수당 대비 법정안전 관리자 선임수당 10만 원 인상</li>
+                            <li>안전사고 예방 및 정원 확보를 통한 교대근무 2인 1조 근무 확행</li>
+                            <li>특정일 근무수당 신설 (보신각 타종 행사, 성탄절, 핼로윈데이 비상동원 등)</li>
+                            <li>현장 여직원을 위한 전용 휴식공간 (휴게실, 탈의실, 샤워실 등) 확보</li>
+                            <li>현장 교대근무 직원 대상 시차 출퇴근제 시범 도입</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 상수도지부 -->
+                <div class="branch-pledge-card" data-branch="상수도">
+                    <div class="branch-pledge-head" style="background-color: #0284c7;">
+                        <span>상수도지부</span>
+                        <small>인사 제도 개선 및 출퇴근</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>상수도 분야 5급 정원 추가 확보 및 6급 자동 승진 추진</li>
+                            <li>지부 외 타 부서 내부 발령 최소화로 전문성/연속성 유지</li>
+                            <li>임금피크제 적용 대상자의 불합리한 급여 및 보직 대우 개선</li>
+                            <li>현장 기동성 제고를 위한 현장 직접 출퇴근제 확대 강화</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 시설지부 -->
+                <div class="branch-pledge-card" data-branch="시설">
+                    <div class="branch-pledge-head" style="background-color: #ea580c;">
+                        <span>시설지부</span>
+                        <small>행사 수당 및 기피업무 지원</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>생활체육팀 새벽/야간 조기출근 수당 신설</li>
+                            <li>시설지부 주관 행사 지원 시 교통비 실비 인상 (1만 원 → 2만 원)</li>
+                            <li>위험 작업 및 직원 기피 부서 기피 업무에 대한 위험/기피 수당 신설</li>
+                            <li>유독 물질 노출에 따른 조경직 농약 살포 수당 신설 및 지급</li>
+                            <li>공단 주관 특정일 행사 강제 동원 시 행사 수당 및 장려금 추가 지급</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 장애인콜택시 지부 -->
+                <div class="branch-pledge-card" data-branch="장애인콜택시">
+                    <div class="branch-pledge-head" style="background-color: #db2777;">
+                        <span>장애인콜택시 지부</span>
+                        <small>운행 효율 및 근무 유연성</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>차량 청결 및 배차 효율을 위한 1인 1차량제 도입 (관련 시의회 예산 확보)</li>
+                            <li>업무 효율화를 위한 현 4개 차고지/관리소 체계의 구조 개편</li>
+                            <li>현장 지도원 및 상담직 5급 정원 확보 및 6급 자동 승진 도입</li>
+                            <li>근거리 배치 최우선 보장 및 일방적 부서 간 내부발령 최소화</li>
+                            <li>상담원 스트레스 완화를 위한 상시 재택근무제 공식 제도화</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 추모지부 -->
+                <div class="branch-pledge-card" data-branch="추모">
+                    <div class="branch-pledge-head" style="background-color: #b91c1c;">
+                        <span>추모지부</span>
+                        <small>특수 수당 현실화 및 대체인력</small>
+                    </div>
+                    <div class="branch-pledge-body">
+                        <ul class="branch-items">
+                            <li>육아시간 및 가족돌봄휴가 활성화에 따른 대체인력 즉시 충원</li>
+                            <li>장례직 직렬의 승진 적체 해소를 위한 4급 진급 기회 확대</li>
+                            <li>운영 효율화를 위한 장례기사 및 봉송 업무 통합 운영 체계 수립</li>
+                            <li>장례 현장의 특수 작업 및 감정 노동 가치 평가를 통한 특수직 수당(혐오수당 등) 인상</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center" id="no-results-msg" style="display: none; padding: 40px; color: var(--text-muted);">
+                <p style="font-size: 1.1rem; font-weight: 600;">검색 결과가 없습니다.</p>
+                <p style="font-size: 0.9rem; margin-top: 8px;">검색어나 지부명을 다시 확인해보세요.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Message Banner -->
+    <section class="container mb-8">
+        <div class="cta-banner">
+            <h2 class="cta-title">각 현장에서 겪는 불편함, 절대 묵인하지 않겠습니다</h2>
+            <p class="cta-desc">기호 3번 이남규·이현욱·양승현은 약속한 공약을 반드시 결과로 보여드립니다.</p>
+            <a href="leaflet.html" class="btn btn-accent">선거 공보물 이미지 보기</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="footer-logo-badge">3</div>
+                        <div class="footer-logo-text">기호 3번 이남규·이현욱·양승현</div>
+                    </div>
+                    <p class="footer-desc">제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부입니다. 침묵하지 않는 목소리, 변화의 시작! 젊은 생각으로, 강한 실행으로 더 나은 내일을 만들어가겠습니다.</p>
+                </div>
+                <div class="footer-links-wrap">
+                    <div class="footer-links-col">
+                        <h6>바로가기</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">홈으로</a></li>
+                            <li><a href="candidates.html">후보자 소개</a></li>
+                            <li><a href="pledges.html">12대 핵심공약</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h6>세부 공약</h6>
+                        <ul class="footer-links">
+                            <li><a href="innovation.html">혁신·소통·보상·신뢰</a></li>
+                            <li><a href="branches.html">지부별 공약 보기</a></li>
+                            <li><a href="leaflet.html">리플렛 원본</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 제17대 서울시설공단 노동조합위원장 선거 기호 3번 선거대책본부. All Rights Reserved. 본 사이트는 정적 페이지로 조합원의 어떠한 정보도 수집하거나 저장하지 않습니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('branch-search');
+            const chips = document.querySelectorAll('.branch-chip');
+            const cards = document.querySelectorAll('.branch-pledge-card');
+            const noResults = document.getElementById('no-results-msg');
+            
+            let currentFilter = 'all';
+            let searchQuery = '';
+
+            // Handle chips click
+            chips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    chips.forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    currentFilter = chip.getAttribute('data-filter');
+                    filterCards();
+                });
+            });
+
+            // Handle search input
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.trim().toLowerCase();
+                filterCards();
+            });
+
+            function filterCards() {
+                let visibleCount = 0;
+                
+                cards.forEach(card => {
+                    const branchName = card.getAttribute('data-branch');
+                    const cardText = card.textContent.toLowerCase();
+                    
+                    // Filter match check
+                    const matchesFilter = (currentFilter === 'all' || branchName === currentFilter);
+                    const matchesSearch = (searchQuery === '' || cardText.includes(searchQuery));
+
+                    if (matchesFilter && matchesSearch) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeIn 0.3s ease-out forwards';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
